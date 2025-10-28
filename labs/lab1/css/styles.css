@@ -1,0 +1,68 @@
+body{
+    background: #000;
+    color: gray;
+    font-family: "Open Sans", sans-serif;
+}
+
+header, main, nav, footer{
+    text-align: center;
+}
+
+nav a{
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: white;
+}
+
+nav a.active{
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    background-color: white;
+    color: black;
+}
+
+nav a:hover{
+    border-bottom: 2px;
+    font-size: 2em;
+    transition: .1s;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    margin: 0px auto;
+}
+
+td{
+    text-align: center;
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong{
+    color: orange
+}
+
+#table-header{
+    background-color: #351a00;
+}
+
+.table-row{
+    background-color: #753900;
+}
+
+ul{
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hobby{
+    color: yellow;
+}
