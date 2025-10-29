@@ -1,68 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
-    background: #000;
-    color: gray;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header, main, nav, footer{
-    text-align: center;
-}
+/* header_nav css */
 
-nav a{
-    padding: 15px;
-    padding-bottom: 4px;
-    font-size: 1.8em;
-    text-decoration: none;
-    color: white;
-}
-
-nav a.active{
-    padding: 15px;
-    padding-bottom: 4px;
-    font-size: 1.8em;
-    background-color: white;
-    color: black;
-}
-
-nav a:hover{
-    border-bottom: 2px;
-    font-size: 2em;
-    transition: .1s;
-}
-
-main{
+.header_nav{
+    width: 100%;
+    height: 120px;
+    flex-shrink: 0;
+    background: #ECECF0;
     display: flex;
     justify-content: center;
+   
 }
 
-table{
-    margin: 0px auto;
+.header_nav_layout{
+    width: 70%;
+    height: 120px;
+    /* padding: 0px 25px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
-td{
+.navbar{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a{
+    color: #717182;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+ a.active{
+    color: #000;
+ }
+
+ .navbar a:hover{
+    color: #ffffff;
+    background: #717182;
+ }
+
+.site_name_1{
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.site_name_2{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Home page css */
+
+figure > img{
+    margin-top: 80px;
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+
+}
+
+.home_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_content > p{
+    color: var(--font-color-2, #717182);
     text-align: center;
-    padding-right: 10px;
-    font-size: 1.3em;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.312px;
+    width: 70%;
+    padding: 10px;
+    
 }
 
-td strong{
-    color: orange
-}
-
-#table-header{
-    background-color: #351a00;
-}
-
-.table-row{
-    background-color: #753900;
-}
-
-ul{
-    width: 500px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.hobby{
-    color: yellow;
+.home_content .name{
+     color:#000;
 }
