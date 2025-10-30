@@ -159,4 +159,46 @@ figure > img{
     color: var(--font-color-2, #717182);
 }
 
+/* about css */
+.role_backgroud{
+    display: flex;
+  
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+.section_box{
+  width: 70%;
+  margin-top: 70px;
+}
+
+table{
+    border-spacing: 0px 10px;
+}
+
+tr.table-row{
+    height: 70px;
+    border: 1px solid var(--BG-gray, #ECECF0);
+    background: #ffffff;
+
+}
+
+td{
+    background: #ECECF0;
+    padding: 15px;
+    color: var(--skill-blue, #859797);
+}
+
+td.role_title{
+    color: #ffffff;
+    background: var(--skill-blue, #859797);
+}
+
+section  p{
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 
