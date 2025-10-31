@@ -162,10 +162,8 @@ figure > img{
 /* about css */
 .role_backgroud{
     display: flex;
-  
     flex-direction: column;
     align-items: center;
-
 }
 
 .section_box{
@@ -208,6 +206,14 @@ section  p{
     color: var(--skill-blue, #859797);
     margin-top: 12px;
 
+}
+
+/* form css */
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
