@@ -159,4 +159,61 @@ figure > img{
     color: var(--font-color-2, #717182);
 }
 
+/* about css */
+.role_backgroud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_box{
+  width: 70%;
+  margin-top: 60px;
+}
+
+table{
+    border-spacing: 0px 10px;
+}
+
+tr.table-row{
+    height: 70px;
+    border: 1px solid var(--BG-gray, #ECECF0);
+    background: #ffffff;
+
+}
+
+td{
+    background: #ECECF0;
+    padding: 15px;
+    color: var(--skill-blue, #859797);
+}
+
+td.role_title{
+    color: #ffffff;
+    background: var(--skill-blue, #859797);
+}
+
+section  p{
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.unorder_list{
+    padding-left: 16px;
+}
+.unorder_list  li{
+    color: var(--skill-blue, #859797);
+    margin-top: 12px;
+
+}
+
+/* form css */
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
