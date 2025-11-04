@@ -150,7 +150,41 @@ figure{
     color: #3E9E74;
 }
 
+/* comparison table css */
 
+.compare_table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* overflow-x: auto; */
+    /* display: block; */
+}
+
+.compare_table table{
+    width: 100%;
+    min-width: 550px;
+}
+
+.compare_table th{
+    background-color: #58CE9B;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.compare_table td{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.compare_table tr:nth-child(even){
+    background-color: rgba(5, 47, 37, 0.03);
+}
+
+.compare_table tr:hover{
+    background-color: #defff1;
+}
 
 
 
