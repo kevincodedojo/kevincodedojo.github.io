@@ -113,8 +113,15 @@ figure{
 
 }
 
-img{
+.img_container{
     margin-top: 20px;
+    height: 170px;
+    max-width: 500px;
+    overflow: hidden;
+
+}
+
+.img_container img{
     max-width: 400px;
     max-height: 170px;
     border-radius: 10px;
