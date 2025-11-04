@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+/* nav css */
+
+nav{
+    background-color: #0A5846;
+    padding: 1rem 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    margin: 8px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #3E9E74;
+}
+
+/* main css */
+main{
+    max-width: 900px;
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+
+
+/* banner css */
+.banner{
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 16px;
+    color: white;
+    background: var(--Gradient-green-1, linear-gradient(90deg, #51DA9E 0%, #26BCB9 100%));  
+}
+
+.banner h1{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+
+/* block_section css */
+
+.block_section{
+
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.10);
+    margin-top: 50px;
+
+}
+
+h2{
+    color: #274665;
+    
+    padding-bottom: 20px;
+    border-bottom: 4px solid #51DA9E;
+    border-image: linear-gradient(to right, #51DA9E, #26BCB9) 1;
+}
+
+.block_section p{
+    color: #4C5158;
+    font-weight: 200;
+    padding-top: 20px;
+    
+}
+
+.block_section ul{
+    margin-top: 20px;
+    list-style-position: inside;
+    color: #4C5158;
+    font-weight: 200;
+    
+}
+
+.block_section ul li{
+    margin-bottom: 10px;
+}
+
+/* figure img css */
+
+figure{
+    display: flex;
+    justify-content: center;
+
+}
+
+.img_container{
+    margin-top: 20px;
+    height: 170px;
+    max-width: 500px;
+    overflow: hidden;
+
+}
+
+.img_container img{
+    max-width: 400px;
+    max-height: 170px;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+
+
+
+
+
+
+/* footer css */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #00523F;
+    color: white;
+    margin-top: 50px;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+footer a{
+    display: inline-block;
+    color: white;
+    padding-top: 10px;
+    
+    
+}
