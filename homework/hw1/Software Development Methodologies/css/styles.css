@@ -90,6 +90,7 @@ h2{
     color: #4C5158;
     font-weight: 200;
     padding-top: 20px;
+    text-align: justify;
     
 }
 
@@ -116,19 +117,38 @@ figure{
 .img_container{
     margin-top: 20px;
     height: 170px;
-    max-width: 500px;
+    max-width: 600px;
     overflow: hidden;
 
 }
 
 .img_container img{
-    max-width: 400px;
+    max-width:600px;
     max-height: 170px;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit:fill;
     
 }
 
+/* value cards */
+
+.value_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.value_card{
+    border-radius: 5px;
+    border-left: 3px solid #3E9E74;
+    background: rgba(5, 47, 37, 0.03);
+    padding: 20px;
+}
+
+.value_card h3{
+    color: #3E9E74;
+}
 
 
 
