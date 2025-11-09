@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Guess a Number </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+
+        
+            <header>
+                <h1>Guess the Number!</h1>
+                <h2>Guess a number between 1 and 99 in seven attempts!</h2>
+            </header>
+
+            <div id="main">
+                <div class="win_and_loss_bar">
+                    <div class="total_wins"></div>
+                    <div class="total_loss"></div>
+                </div>
+                
+                <div class="attempt_left"></div>
+                <div class="enter_guess">
+                    <span>Enter a guess:</span>
+                    <input type="text" id="playerGuess" size="5"> 
+                </div>
+
+                <div class="click_buttons">
+                    <button id="guessBtn"> Guess </button> <br>
+                    <button id="resetBtn"> Reset </button>
+                </div>     
+            
+                <div id="feedback"></div>
+
+                <div class="guess_number_list">
+                    Previous Guesses: <span id="guesses"></span>
+                </div>
+            
+           
+
+        </div>
+
+        
+        
+        
+    </body>
+    <script src="js/script.js"></script>
+</html>
