@@ -96,7 +96,7 @@ function checkGuess() {
         document.querySelector("#guesses").textContent += guess + " ";
 
         if(attempts == 7){
-            feedback.textContent = "Sorry, you lost!";
+            feedback.textContent = "Sorry, you lost! The correct number is: " + randomNumber;
             feedback.style.color = "red";
             number_loss ++;
             total_loss.textContent = "Total loss(es)" + number_loss;
