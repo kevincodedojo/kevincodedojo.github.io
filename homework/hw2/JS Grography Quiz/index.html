@@ -18,7 +18,7 @@
     <input type="text" id = "q1">
     <br><br>
     <div id="q1Feedback"></div>
-    <br><br>
+    <br>
 
     <!-- Second Question -->
     <h3><span id="markImg2"></span>What is the longest river?</h3>
@@ -31,7 +31,7 @@
     </select>
     <br><br>
     <div id="q2Feedback"></div>
-    <br><br>
+    <br>
 
     <!-- Third Question -->
     <h3><span id="markImg3"></span>What presidents are carved into mount Rushmore?</h3>
@@ -41,7 +41,7 @@
     <input type="checkbox" id="Roosevelt"> <label for="Roosevelt">T. Roosevelt</label>
     <br><br>
     <div id="q3Feedback"></div>
-    <br><br>
+    <br>
 
     <!-- Fourth Question -->
     <h3><span id="markImg4"></span>What is the smallest US State?</h3>
@@ -49,12 +49,68 @@
     <!-- <input type="radio" name="q4" id="me" value="Maine"><label for="me">Maine</label>
     <input type="radio" name="q4" id="ri" value="Rhode Island"><label for="ri">Rhode Island</label>
     <input type="radio" name="q4" id="md" value="Maryland"><label for="md">Maryland</label>
-    <input type="radio" name="q4" id="me" value="Delaware"><label for="de">Delaware</label> -->
+    <input type="radio" name="q4" id="de" value="Delaware"><label for="de">Delaware</label> -->
     <br><br>
     <div id="q4Feedback"></div>
+    <br>
+
+     <!-- Question 5 -->
+    <h3><span id="markImg5"></span>Guess the population of California (in millions)</h3>
+    <input type="range" id="q5" min="0" max="50" value="25">
+    <span id="value5">25</span> millions
     <br><br>
+    <div id="q5Feedback"></div>
+    <br>
+
+     <!-- Question 6-->
+    <h3><span id="markImg6"></span>What is the largest U.S. state by area?</h3>
+    <div id="q6Choices"></div>
+    <br><br>
+    <div id="q6Feedback"></div>
+    <br>
+
+    <!-- Question 7-->
+    <h3><span id="markImg7"></span>Which U.S. state is known as the “Sunshine State”?</h3>
+    <input type="text" id = "q7">
+    <br><br>
+    <div id="q7Feedback"></div>
+    <br>
     
-    
+    <!-- Question 8 -->
+    <h3><span id="markImg8"></span>What is the tallest mountain in the United States?</h3>
+    <input type="checkbox" id="Whitney"> <label for="Whitney">Mount Whitney</label>
+    <input type="checkbox" id="Rainier"> <label for="Rainier">Mount Rainier</label>
+    <input type="checkbox" id="Denali"> <label for="Denali">Denali</label>
+    <input type="checkbox" id="Elbert"> <label for="Elbert">Mount Elbert</label>
+    <br><br>
+    <div id="q8Feedback"></div>
+    <br>
+
+     <!-- Question 9 -->
+    <h3><span id="markImg9"></span>What is the capital city of New York?</h3>
+    <select name="question9" id="q9">
+    <option value="">Selec One</option>
+    <option value="NYC">New York City</option>
+    <option value="Buffalo">Buffalo</option>
+    <option value="Albany">Albany</option>
+    <option value="Rochester">Rochester</option>
+    </select>
+    <br><br>
+    <div id="q9Feedback"></div>
+    <br>
+
+    <!-- Question 10 -->
+    <h3><span id="markImg10"></span>Hawaii became the 50th U.S. state in what year?</h3>
+    <select name="question10" id="q10">
+    <option value="">Selec One</option>
+    <option value="1945">1945</option>
+    <option value="1959">1959</option>
+    <option value="1965">1965</option>
+    <option value="1971">1971</option>
+    </select>
+    <br><br>
+    <div id="q10Feedback"></div>
+    <br>
 
 
     <h3 id="validationFdbk" class="bg-danger text-white"></h3>
@@ -65,6 +121,11 @@
     <h2 id="totalScore" class="text-info"></h2>
 
     <h3 id="totalAttempts"></h3>
+
+
+    <footer class="bg-secondary p-3 text-white">
+        <p>&copy; 2025 Shen</p>
+    </footer>
     
 </body>
 
