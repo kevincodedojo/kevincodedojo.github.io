@@ -11,121 +11,191 @@
 </head>
 <body class="text-center">
 
-    <h1 class="p-5 bg-info">US Geography Quiz</h1>
+    <header class="bg-primary text-white shadow">
+        <h1 class="p-4">US Geography Quiz</h1>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center gy-4">
+
+        
+    
+    
 
     <!-- First Question -->
-    <h3><span id="markImg1"></span>What is the capital of California?</h3>
-    <input type="text" id = "q1">
-    <br><br>
-    <div id="q1Feedback"></div>
-    <br>
+     <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg1"></span>What is the capital of California?</h3>
+            <input type="text" id = "q1">
+            <br>
+            <div id="q1Feedback"></div>
+            <br>
+        </div>
+    </div>
+
+    
 
     <!-- Second Question -->
-    <h3><span id="markImg2"></span>What is the longest river?</h3>
-    <select name="question2" id="q2">
-    <option value="">Selec One</option>
-    <option value="ms">Mississippi</option>
-    <option value="mo">Missouri</option>
-    <option value="co">Colorado</option>
-    <option value="de">Delaware</option>
-    </select>
-    <br><br>
-    <div id="q2Feedback"></div>
-    <br>
+    <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg2"></span>What is the longest river?</h3>
+            <select name="question2" id="q2">
+            <option value="">Selec One</option>
+            <option value="ms">Mississippi</option>
+            <option value="mo">Missouri</option>
+            <option value="co">Colorado</option>
+            <option value="de">Delaware</option>
+            </select>
+            <br>
+            <div id="q2Feedback"></div>
+            <br>
+        </div>
+    </div>
+
+    
 
     <!-- Third Question -->
-    <h3><span id="markImg3"></span>What presidents are carved into mount Rushmore?</h3>
-    <input type="checkbox" id="Jackson"> <label for="Jackson">A. Jackson</label>
-    <input type="checkbox" id="Franklin"> <label for="Franklin">B. Frankllin</label>
-    <input type="checkbox" id="Jefferson"> <label for="Jefferson">T. Jefferson</label>
-    <input type="checkbox" id="Roosevelt"> <label for="Roosevelt">T. Roosevelt</label>
-    <br><br>
-    <div id="q3Feedback"></div>
-    <br>
+     <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg3"></span>What presidents are carved into mount Rushmore?</h3>
+            <input type="checkbox" id="Jackson"> <label for="Jackson">A. Jackson</label>
+            <input type="checkbox" id="Franklin"> <label for="Franklin">B. Frankllin</label>
+            <input type="checkbox" id="Jefferson"> <label for="Jefferson">T. Jefferson</label>
+            <input type="checkbox" id="Roosevelt"> <label for="Roosevelt">T. Roosevelt</label>
+            <br>
+            <div id="q3Feedback"></div>
+            <br>
+        </div>
+    </div>
+    
 
     <!-- Fourth Question -->
-    <h3><span id="markImg4"></span>What is the smallest US State?</h3>
-    <div id="q4Choices"></div>
-    <!-- <input type="radio" name="q4" id="me" value="Maine"><label for="me">Maine</label>
-    <input type="radio" name="q4" id="ri" value="Rhode Island"><label for="ri">Rhode Island</label>
-    <input type="radio" name="q4" id="md" value="Maryland"><label for="md">Maryland</label>
-    <input type="radio" name="q4" id="de" value="Delaware"><label for="de">Delaware</label> -->
-    <br><br>
-    <div id="q4Feedback"></div>
-    <br>
+     <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg4"></span>What is the smallest US State?</h3>
+            <div id="q4Choices"></div>
+            <!-- <input type="radio" name="q4" id="me" value="Maine"><label for="me">Maine</label>
+            <input type="radio" name="q4" id="ri" value="Rhode Island"><label for="ri">Rhode Island</label>
+            <input type="radio" name="q4" id="md" value="Maryland"><label for="md">Maryland</label>
+            <input type="radio" name="q4" id="de" value="Delaware"><label for="de">Delaware</label> -->
+            <br><br>
+            <div id="q4Feedback"></div>
+            <br>
+        </div>
+    </div>
+    
 
      <!-- Question 10 -->
-    <h3><span id="markImg10"></span>Hawaii became the 50th U.S. state in what year?</h3>
-    <select name="question10" id="q10">
-    <option value="">Selec One</option>
-    <option value="1945">1945</option>
-    <option value="1959">1959</option>
-    <option value="1965">1965</option>
-    <option value="1971">1971</option>
-    </select>
-    <br><br>
-    <div id="q10Feedback"></div>
-    <br>
+      <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg10"></span>Hawaii became the 50th U.S. state in what year?</h3>
+            <select name="question10" id="q10">
+            <option value="">Selec One</option>
+            <option value="1945">1945</option>
+            <option value="1959">1959</option>
+            <option value="1965">1965</option>
+            <option value="1971">1971</option>
+            </select>
+            <br>
+            <div id="q10Feedback"></div>
+            <br>
+        </div>
+    </div>
+    
 
      <!-- Question 5 -->
-    <h3><span id="markImg5"></span>Guess the population of California (in millions)</h3>
-    <input type="range" id="q5" min="0" max="50" value="25">
-    <span id="value5">25</span> millions
-    <br><br>
-    <div id="q5Feedback"></div>
-    <br>
+      <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg5"></span>Guess the population of California (in millions)</h3>
+            <input type="range" id="q5" min="0" max="50" value="25">
+            <span id="value5">25</span> millions
+            <br>
+            <div id="q5Feedback"></div>
+            <br>
+        </div>
+    </div>
+    
 
      <!-- Question 6-->
-    <h3><span id="markImg6"></span>What is the largest U.S. state by area?</h3>
-    <div id="q6Choices"></div>
-    <br><br>
-    <div id="q6Feedback"></div>
-    <br>
+      <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg6"></span>What is the largest U.S. state by area?</h3>
+            <div id="q6Choices"></div>
+            <br>
+            <div id="q6Feedback"></div>
+            <br>
+        </div>
+    </div>
+    
 
     <!-- Question 7-->
-    <h3><span id="markImg7"></span>Which U.S. state is known as the “Sunshine State”?</h3>
-    <input type="text" id = "q7">
-    <br><br>
-    <div id="q7Feedback"></div>
-    <br>
+     <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg7"></span>Which U.S. state is known as the “Sunshine State”?</h3>
+            <input type="text" id = "q7">
+            <br>
+            <div id="q7Feedback"></div>
+            <br>
+        </div>
+    </div>
+    
     
     <!-- Question 8 -->
-    <h3><span id="markImg8"></span>What is the tallest mountain in the United States?</h3>
-    <input type="checkbox" id="Whitney"> <label for="Whitney">Mount Whitney</label>
-    <input type="checkbox" id="Rainier"> <label for="Rainier">Mount Rainier</label>
-    <input type="checkbox" id="Denali"> <label for="Denali">Denali</label>
-    <input type="checkbox" id="Elbert"> <label for="Elbert">Mount Elbert</label>
-    <br><br>
-    <div id="q8Feedback"></div>
-    <br>
+     <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg8"></span>What is the tallest mountain in the United States?</h3>
+            <input type="checkbox" id="Whitney"> <label for="Whitney">Mount Whitney</label>
+            <input type="checkbox" id="Rainier"> <label for="Rainier">Mount Rainier</label>
+            <input type="checkbox" id="Denali"> <label for="Denali">Denali</label>
+            <input type="checkbox" id="Elbert"> <label for="Elbert">Mount Elbert</label>
+            <br>
+            <div id="q8Feedback"></div>
+            <br>
+        </div>
+    </div>
+    
 
      <!-- Question 9 -->
-    <h3><span id="markImg9"></span>What is the capital city of New York?</h3>
-    <select name="question9" id="q9">
-    <option value="">Selec One</option>
-    <option value="NYC">New York City</option>
-    <option value="Buffalo">Buffalo</option>
-    <option value="Albany">Albany</option>
-    <option value="Rochester">Rochester</option>
-    </select>
-    <br><br>
-    <div id="q9Feedback"></div>
-    <br>
+      <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            <h3><span id="markImg9"></span>What is the capital city of New York?</h3>
+            <select name="question9" id="q9">
+            <option value="">Selec One</option>
+            <option value="NYC">New York City</option>
+            <option value="Buffalo">Buffalo</option>
+            <option value="Albany">Albany</option>
+            <option value="Rochester">Rochester</option>
+            </select>
+            <br>
+            <div id="q9Feedback"></div>
+            <br>
+        </div>
+    </div>
+    
 
    
+    <div class="col-12 col-md-8 col-lg-7">
+        <div class="card glass-card p-4">
+            
+            <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+
+            <button class="btn btn-outline-primary">Submit Quiz</button>
+
+            <!-- <br> -->
+            <h2 id="totalScore" class="text-info"></h2>
+
+            <h3 id="totalAttempts"></h3>
+
+        </div>
+    </div>
 
 
-    <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+    
 
-    <button class="btn btn-outline-primary">Submit Quiz</button>
+    </div>
+</main>
 
-    <br>
-    <h2 id="totalScore" class="text-info"></h2>
-
-    <h3 id="totalAttempts"></h3>
-
-
-    <footer class="bg-secondary p-3 text-white">
+    <footer class="bg-dark p-3 text-white mt-5 py-3 blur-bg">
         <p>&copy; 2025 Shen</p>
     </footer>
     
