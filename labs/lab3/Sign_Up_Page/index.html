@@ -3,50 +3,69 @@
 
 <head>
     <title> Sign Up Page </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <form id="signupForm" action="welcome.html">
-        <h1> Sign Up </h1>
-        First Name:<input type="text" name="fName"><br>
-        Last Name: <input type="text" name="lName"><br>
+    <div class="page-content">
+        <div class="text-black form-div">
+            <form id="signupForm" action="welcome.html">
+                <div class="form-title">
+                    <h1> Sign Up </h1>
+                </div>
 
-        Gender:
-        <input type="radio" name="gender" value="m">Male
-        <input type="radio" name="gender" value="f">Female<br><br>
+                First Name:<input type="text" name="fName"><br>
+                Last Name:<input type="text" name="lName"><br>
 
-        Zip Code: <input type="text" id="zip" name="zip">
-        <span id="zipNotFound"></span><br>
-        City: <span id="city"></span> <br>
-        Latitude: <span id="latitude"></span><br>
-        Longitude: <span id="longitude"></span><br><br>
+                Gender:
+                <input type="radio" name="gender" value="m">Male
+                <input type="radio" name="gender" value="f">Female<br><br>
 
-        State:
-        <select id="state" name="state">
-            <option>Select One</option>
-            <!-- <option value="ca">California</option>
+                Zip Code: <input type="text" id="zip" name="zip">
+                <span id="zipNotFound"></span><br>
+                City: <span id="city"></span> <br>
+                Latitude: <span id="latitude"></span><br>
+                Longitude: <span id="longitude"></span><br><br>
+
+                State:
+                <select id="state" name="state">
+                    <option>Select One</option>
+                    <!-- <option value="ca">California</option>
             <option value="ny">New York</option>
             <option value="tx">Texas</option> -->
-        </select> <br>
+                </select> <br>
 
-        Select a County: <select id="county"></select><br>
+                Select a County: <select id="county"></select><br>
 
-        Desired Username:
-        <input type="text" id="username"><br>
-        <span id="usernameError"></span><br>
+                Desired Username:
+                <input type="text" id="username"><br>
+                <span id="usernameError"></span><br>
 
-        Password: <input type="password" id="password" name="password">
-        <span id="suggestedPwd"></span> <br>
+                Password: <input type="password" id="password" name="password">
+                <span id="suggestedPwd"></span> <br>
 
-        Type Password Again: <input type="password" id="retypePW" name="retypePW"><br>
-        <span id="passwordError"></span><br>
+                Type Password Again: <input type="password" id="retypePW" name="retypePW"><br>
+                <span id="passwordError"></span><br>
 
-        <input type="submit" value="Sign up!">
+                <input type="submit" value="Sign up!">
 
-    </form>
+            </form>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark p-3 text-white mt-5 py-3 blur-bg">
+        <p>&copy; 2025 Shen</p>
+    </footer>
+
 
     <script src="js/script.js"></script>
 
 </body>
+
+
+
 
 </html>
