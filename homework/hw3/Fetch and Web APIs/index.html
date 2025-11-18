@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Fetch and Web APIs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    
+        <div class="weather-section">
+
+            <h1>Current Weather</h1>
+            <form action="" id="form-section">
+                <label for="cityName">Enter a city name:</label>
+                <input type="text" id="cityName" name="cityName" placeholder="e.g. Hawaii">
+                <span id="nameError"></span>
+                <button>Get Weather</button>
+            </form>
+
+            <div id="displayResult" class="displayResult">
+                <h3 class="displayCity"></h3>
+                <p class="searchResult"></p>
+                <p class="temperature"></p>
+                <img class="tempImg hidden" alt="">
+            </div>
+
+        </div>
+   
+
+
+    <footer>
+        &copy; Shen
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

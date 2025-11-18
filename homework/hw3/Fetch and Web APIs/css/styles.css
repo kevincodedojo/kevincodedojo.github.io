@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-se;
+    background: linear-gradient(135deg, #0F1725 0%, #20474f 50%, #0F1725 100%);
+    /* background: linear-gradient(135deg, #254d54 20%, #0F1725 100%); */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px; */
+    position: relative;
+
+}
+
+
+
+/* weather card */
+.weather-section {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 40px;
+    min-width: 400px;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    margin: 100px;
+
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(103, 174, 209, 0.10);
+    box-shadow: -5px -5px 10px 0 rgba(255, 255, 255, 0.25) inset;
+}
+
+
+/* header */
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* form section */
+#form-section {
+    margin-bottom: 30px;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+#cityName {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    margin-bottom: 12px;
+}
+
+#cityName::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#cityName:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+#nameError {
+    display: block;
+    color: #ff6b6b;
+    font-size: 0.875rem;
+    margin-bottom: 12px;
+    min-height: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 14px 24px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.39);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+    background: linear-gradient(356deg, rgba(79, 174, 232, 0.56) 1.73%, rgba(5, 124, 160, 0.56) 57.91%);
+
+    color: white;
+    border: none;
+    border-radius: 12px;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 4px 15px rgba(92, 163, 230, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+}
+
+button:hover {
+    background: linear-gradient(356deg, rgba(79, 174, 232, 0.56) 1.73%, rgba(5, 124, 160, 0.56) 90.91%);
+
+    box-shadow:
+        0 6px 20px rgba(92, 163, 230, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow:
+        0 2px 10px rgba(92, 163, 230, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* display result */
+.displayResult {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    min-height: 240px;
+
+}
+
+.displayCity {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.searchResult {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.temperature {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tempImg {
+    width: 80px;
+    height: 80px;
+    /* margin: 20px auto; */
+    border-radius: 8px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    display: inline;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    text-align: center;
+  
+    padding: 14px;
+    background: rgba(2, 30, 49, 0.3);
+    width: 100%;
+
+
+}
