@@ -15,6 +15,7 @@ document.querySelector("#form-section").addEventListener("submit", function (eve
         //hidden displayResult
         document.querySelector(".displayCity").textContent = "";
         document.querySelector(".searchResult").textContent = "";
+        document.querySelector(".temperature").textContent = "";
 
         document.querySelector(".tempImg").classList.add("hidden")
 
