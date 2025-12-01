@@ -20,26 +20,58 @@ const pool = mysql.createPool({
 });
 
 //routes
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
     //    res.send('Hello Express app!')
-    res.render('index');
+    let sql = `SELECT authorId, firstName, lastName
+                FROM q_authors
+                ORDER BY lastName`;
+    const [rows] = await pool.query(sql);
+
+    res.render('index', {"authors" : rows});
 
 });
 
-app.get('/searchByKeyword', async(req, res) => {
+app.get('/searchByKeyword', async (req, res) => {
     let userKeyword = req.query.keyword;
     let sql = `SELECT quote, authorId, firstName, lastName
                 From q_quotes
                 NATURAL JOIN q_authors
-                WHERE quote LIKE '%${userKeyword}%'`;
-    let sqlParams = [`%{keyword}%`];
+                WHERE quote LIKE ?`;
+    let sqlParams = [`%${userKeyword}%`];
     const [rows] = await pool.query(sql, sqlParams);
-    res.render("results", {"quotes":rows});
+    res.render("results", { "quotes": rows });
 
     // res.send(rows);
     // res.render('index');
 
 });
+
+app.get('/searchByAuthor', async (req, res) => {
+    let userAuthorId = req.query.authorId;
+    let sql = `SELECT quote, authorId, firstName, lastName
+                From q_quotes
+                NATURAL JOIN q_authors
+                WHERE authorId = ?`;
+    let sqlParams = [userAuthorId];
+    const [rows] = await pool.query(sql, sqlParams);
+    res.render("results", { "quotes": rows });
+
+    // res.send(rows);
+    // res.render('index');
+
+}); 
+
+app.get('/api/author/:id', async (req, res) => {
+    let authorId = req.params.id;
+    let sql = `SELECT *
+                FROM q_authors
+                WHERE authorId = ?
+    `;
+    const [rows] = await pool.query(sql, [authorId]);
+    res.send(rows);
+
+});
+
 
 app.get("/dbTest", async (req, res) => {
     try {
