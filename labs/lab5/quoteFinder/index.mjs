@@ -22,12 +22,23 @@ const pool = mysql.createPool({
 //routes
 app.get('/', async (req, res) => {
     //    res.send('Hello Express app!')
-    let sql = `SELECT authorId, firstName, lastName
+    // passing author name
+    let authorSql = `SELECT authorId, firstName, lastName
                 FROM q_authors
                 ORDER BY lastName`;
-    const [rows] = await pool.query(sql);
+    const [authorRows] = await pool.query(authorSql);
 
-    res.render('index', {"authors" : rows});
+    // passing category
+    let categorySql = `SELECT DISTINCT category
+                        FROM q_quotes
+                        ORDER BY category`;
+    const [categoryRows] = await pool.query(categorySql);
+
+    res.render('index', {
+        "authors" : authorRows,
+        "categories" : categoryRows
+
+    });
 
 });
 
@@ -53,6 +64,21 @@ app.get('/searchByAuthor', async (req, res) => {
                 NATURAL JOIN q_authors
                 WHERE authorId = ?`;
     let sqlParams = [userAuthorId];
+    const [rows] = await pool.query(sql, sqlParams);
+    res.render("results", { "quotes": rows });
+
+    // res.send(rows);
+    // res.render('index');
+
+}); 
+
+app.get('/searchByCategory', async (req, res) => {
+    let userCategory = req.query.category;
+    let sql = `SELECT quote, authorId, firstName, lastName
+                From q_quotes
+                NATURAL JOIN q_authors
+                WHERE category = ?`;
+    let sqlParams = [userCategory];
     const [rows] = await pool.query(sql, sqlParams);
     res.render("results", { "quotes": rows });
 
