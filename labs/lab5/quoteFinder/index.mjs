@@ -87,6 +87,19 @@ app.get('/searchByCategory', async (req, res) => {
 
 }); 
 
+app.get('/searchByLikes', async (req, res) => {
+    let userLikeL = req.query.likeNumL;
+    let userLikeR = req.query.likeNumR;
+    let sql = `SELECT quote, authorId, firstName, lastName
+                From q_quotes
+                NATURAL JOIN q_authors
+                WHERE likes >= ? AND likes <= ?`;
+    let sqlParams = [userLikeL, userLikeR];
+    const [rows] = await pool.query(sql, sqlParams);
+    res.render("results", { "quotes": rows });
+
+}); 
+
 app.get('/api/author/:id', async (req, res) => {
     let authorId = req.params.id;
     let sql = `SELECT *

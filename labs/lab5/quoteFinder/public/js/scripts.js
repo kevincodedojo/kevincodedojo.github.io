@@ -5,6 +5,12 @@ for(authorLink of authorLinks){
     authorLink.addEventListener("click", getAuthorInfo);
 }
 
+// adding class
+let buttons = document.querySelectorAll("button");
+for (let btn of buttons) {
+    btn.classList.add("btn", "btn-light",);
+}
+
 async function getAuthorInfo(){
 
     const myModal = new bootstrap.Modal(document.getElementById('authorModal'));
